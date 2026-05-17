@@ -9,12 +9,13 @@
 
 .container{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: left;
     align-items: left;
     overflow-x: hidden;
 }
+
 .sidebar{
     position: fixed;
     top: 0;
@@ -23,18 +24,44 @@
     height: 100vh;
     background-color: #333;
 }
+
+.sidebar h1{
+    color: #fff;
+    padding: 30px ;
+    margin: 0;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .sidebar a{
     display: block;
     padding: 15px;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;    
 }   
 
 .sidebar a:hover{
     background-color: #555;
 }
 
+.sidebar footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    color: #d68eff;
+}
+
 .main-content{
     margin-left: 200px;
     padding: 20px;
+}
+
+body {
+    background-color: #c0c0c0;
 }
