@@ -48,13 +48,17 @@
     background-color: #555;
 }
 
-.sidebar footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: left;
-    color: #d68eff;
+.sidebar div{
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    position: absolute;
+}
+
+.sidebar div a{
+    color: #fff;
+    font-size: 20px;
 }
 
 .main-content{
