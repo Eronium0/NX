@@ -7,6 +7,8 @@
   font-style: normal;
 }
 
+/* Global Styles */
+ 
 .container{
     width: 100%;
     height: auto;
@@ -54,16 +56,110 @@
     gap: 10px;
     padding: 15px;
     position: absolute;
+    bottom: 0;
 }
 
 .sidebar socials a{
     color: #fff;
     font-size: 20px;
+} 
+
+.main h1{
+    margin: 0px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 35px;
 }
 
-.main-content{
+.main h2{
+    margin: 0px;
+    height: auto;
     margin-left: 200px;
-    padding: 20px;
+    display : flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 100px;
+}
+
+.main p{
+    margin-left: 200px;
+    height: auto;
+    display : flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 20px;
+}
+
+/* Welcome Page */
+
+.welcome-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.welcome-bar{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-bar ul{
+    list-style-type: none;
+    width: auto;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.welcome-bar a{
+    display: block;
+    padding: 50px;
+    color: #fff;
+    text-decoration: none; 
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.welcome-bar a:hover{
+    background-color: #555;
+}
+
+.main-welcome h1{
+    margin: 0px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.main-welcome h2{
+    margin: 0px;
+    height: auto;
+    margin-top: 20px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.main-welcome p{
+    margin-top: 50px;
+    height: auto;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 body {
