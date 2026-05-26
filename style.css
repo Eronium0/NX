@@ -165,3 +165,9 @@
 body {
     background-color: #c0c0c0;
 }
+
+html, body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
