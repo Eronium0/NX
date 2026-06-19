@@ -7,63 +7,6 @@
   font-style: normal;
 }
 
-/* Global Styles */
- 
-/* .container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    overflow-x: hidden;
-}
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100vh;
-    background-color: #333;
-}
-
-.sidebar h1{
-    color: #fff;
-    padding: 30px ;
-    margin: 0;
-}
-
-.sidebar ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar a{
-    display: block;
-    padding: 15px;
-    color: #fff;
-    text-decoration: none;    
-}   
-
-.sidebar a:hover{
-    background-color: #555;
-}
-
-.sidebar socials{
-    margin-top: auto;
-    display: flex;
-    gap: 10px;
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-}
-
-.sidebar socials a{
-    color: #fff;
-    font-size: 20px;
-}  */
-
 .main h1{
     margin: 0px;
     margin-left: 6.25rem;
@@ -91,100 +34,37 @@
     font-size: 1.25rem;
 }
 
-.hidden {
-    display: none;
-}
+
 
 .menu {
     position: fixed;
-    top: 40px;
+    top: 35px;
     left: 100px;
     background-color: #cdcdcd;
     padding: 1rem;
     border-radius: 5px;
-    width: 100%;
-    height: 2rem;
+    width: 75vw;
+    height: 4vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .menu a {
     display: row;
-    padding: 1vw;
+    padding: 0.5rem 1rem;
     color: #000;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .menu a:hover {
     background-color: #9d9d9d;
     color: #fff;
 }
-/* Welcome Page */
 
-/* .welcome-container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-}
-
-.welcome-bar{
-    position: fixed;
-    width: 100%;
-    height: auto;
-    top: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.welcome-bar ul{
-    list-style-type: none;
-    width: auto;
-    margin: 0;
-    display: flex;
-    gap: 50px;
-}
-
-.welcome-bar a{
-    display: block;
-    padding: 50px;
-    color: #fff;
-    text-decoration: none; 
-    background-color: #333;
-    border-radius: 10px;
-}
-
-.welcome-bar a:hover{
-    background-color: #555;
-} */
-
-.main-welcome h1{
-    margin: 0px;
-    margin-top: 1.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(1.75rem, 4vw, 2.1875rem);
-}
-
-.main-welcome h2{
-    margin: 0px;
-    height: auto;
-    margin-top: 1.25rem;
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(2.5rem, 8vw, 6.25rem);
-}
-
-.main-welcome p{
-    margin-top: 3.125rem;
-    height: auto;
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25rem;
+.hidden {
+    display: none;
 }
 
 body {
