@@ -13,20 +13,50 @@
 </head>
 <body>
     <button class="menu-button" id="menuButton"> <i class="fas fa-bars"></i> </button>
-        <div id = "menu" class="hidden menu">
-            <a href="index.html">Home</a>
-            <a href="pages/about.html">About Me</a>
-            <a href="pages/music.html">Music</a>
-            <a href="pages/eternity.html">Eternity</a>
-            <a href="pages/cs_projects.html">CS Projects</a>
-            <a href="https://www.instagram.com/ero.nium/" target="_blank" rel="noopener noreferrer"><i class = "fab fa-instagram"></i></a>
-            <a href="https://github.com/Eronium0" target="_blank" rel="noopener noreferrer"><i class = "fab fa-github"></i></a>
-            <a href="https://open.spotify.com/artist/5apVfVgsmf4TuO3htzg63E?si=SBFJqs63T7mDn9Ksaw8Bpw" target="_blank" rel="noopener noreferrer"><i class = "fab fa-spotify"></i></a>
-        </div>
+        <nav id="menu" class="hidden menu">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pages/about.html">About Me</a>
+                <a href="pages/music.html">Music</a>
+                <a href="pages/eternity.html">Eternity</a>
+                <a href="pages/cs_projects.html">CS Projects</a>
+            </div>
+            <div class="nav-socials">
+                <a href="https://www.instagram.com/ero.nium/" target="_blank" rel="noopener noreferrer"><i class = "fab fa-instagram"></i></a>
+                <a href="https://github.com/Eronium0" target="_blank" rel="noopener noreferrer"><i class = "fab fa-github"></i></a>
+                <a href="https://open.spotify.com/artist/5apVfVgsmf4TuO3htzg63E?si=SBFJqs63T7mDn9Ksaw8Bpw" target="_blank" rel="noopener noreferrer"><i class = "fab fa-spotify"></i></a>
+            </div>
+        </nav>
     <main class="main">    
     <h1>Welcome to NX.</h1>
     <p>The place where I keep all things stories, music, projects, and more cooped up!</p>
     </main>
+    <div class="grid">
+        <a href="pages/eternity.html">
+            <div class="grid-item">
+                <h2>Eternity</h2>
+                <p>Delve into the world of Eternity.</p>
+            </div>
+        </a>
+        <a href="pages/music.html">
+            <div class="grid-item">
+                <h2>Music</h2>
+                <p>Listen to all things Eronium.</p>
+            </div>
+        </a>
+        <a href="pages/cs_projects.html">
+            <div class="grid-item">
+                <h2>Projects</h2>
+                <p>Explore completed and WIP projects.</p>
+            </div>
+        </a>
+        <a href="pages/about.html">
+            <div class="grid-item">
+                <h2>About Me</h2>
+                <p>Learn more about me and my journey.</p>
+            </div>
+        </a>    
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
