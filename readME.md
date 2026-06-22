@@ -1,4 +1,4 @@
-# NX (Working Title)
+# NX
 
 Welcome to my personal portfolio site! This is a place where I collect and place my projects, skills, and a bit about myself. 
 
