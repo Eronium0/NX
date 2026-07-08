@@ -18,14 +18,25 @@
   font-style: normal;
 }
 
-img{
-    position: absolute;
-    width: 300px;
+.about-content {
+    display: flex;
+    align-items: flex-start;   
+    gap: 2rem;
+    padding-right: 5rem;       
+}
+
+.about-content .main {
+    flex: 1 1 auto;   
+    min-width: 0;     
+}
+
+.profile-image {
+    flex-shrink: 0;                   
+    width: clamp(150px, 20vw, 300px); 
     height: auto;
     border-radius: 15%;
-    top: 12.5rem;
-    left: 70rem;
-    border: 4px solid var(--ink-black);
+    border: 4px solid var(--space-indigo);
+    margin-top: 12.5rem;              
 }
 
 .main h1{
@@ -146,10 +157,14 @@ body {
         width: auto;
     }
 
-    img {
-        width: 200px;
-        height: auto;
-        margin-left: 0;
-        margin-top: -20rem;
+    .about-layout {
+        flex-direction: column;   
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .profile-image {
+        margin-top: 2rem;         
+        width: min(60vw, 250px);
     }
 }
