@@ -1,3 +1,5 @@
+/* menu button script */
+
 const menuButton = document.getElementById('menuButton');
 const menu = document.getElementById('menu');
 

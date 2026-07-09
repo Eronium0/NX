@@ -7,6 +7,8 @@
 --dusty-grape: #474973;
 --space-indigo: #161b33;
 --ink-black: #0d0c1d;
+--white : #ffffff;
+--black : #000000;
 }
 
 
@@ -17,29 +19,150 @@
   font-style: normal;
 }
 
+.music-content {
+    display: flex;
+    align-items: flex-start;   
+    gap: 2rem;
+    padding-right: 5rem;       
+}
+
+.music-content .main {
+    flex: 1 1 auto;   
+    min-width: 0;     
+}
+
+.vinyl-player{
+    width: 300px;
+    padding: 10px;
+    border: 4px solid var(--ink-black);
+    background-color: var(--lilac);
+    border-radius: 10px;
+    margin-top: 12.5rem;
+}
+
+.vinyl-cover{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: clamp(3rem, 4vw, 5rem);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.prev{
+    font-size: 1.5rem;
+    background-color: #33333300;
+    border: none;
+    cursor: pointer;
+}
+
+.play-pause{
+    font-size: 1.5rem;
+    background-color: #33333300;
+    border: none;
+    cursor: pointer;
+}
+
+.next{
+    font-size: 1.5rem;
+    background-color: #33333300;
+    border: none;
+    cursor: pointer;
+}
+
+#track-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.track-list {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+
+}
+
+.track-list li{
+    list-style: none;
+    justify-content: left;
+    align-items: left  ;
+    display: flex;
+    color: var(--space-indigo);
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 3px solid var(--space-indigo);
+}
+
+.track-list li:hover {
+    background-color: var(--ink-black);
+    color: var(--white);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: var(--space-indigo);
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+#progress{
+    width: 0%;
+    height: 100%;
+    background: var(--almond);
+    transition: width 0.1s ease-in-out;
+    border-radius: 5px;
+}
+
 .main h1{
     margin: 0px;
     margin-top: 12.5rem;
     display: flex;
     font-size: clamp(3rem, 7vw, 5rem);
-    justify-content: center;
+    justify-content: left;
+    margin-left: 5rem;
+    color: var(--white);
 }
 
 .main h2{
     margin: 0px;
     height: auto;
     display : flex;
-    justify-content: center;
-    font-size: clamp(2.5rem, 8vw, 6.25rem);
+    justify-content: left;
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    margin-left: 5rem;
+    margin-top: 5rem;
+    color: var(--white);
 }
 
 .main p{
     height: auto;
     display : flex;
-    justify-content: center;
+    justify-content: left;
     font-size: 1.25rem;
+    margin-left: 5rem;
+    color: var(--white);
 }
 
+.main iframe {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
 
 .menu-button {
     position: absolute;
@@ -47,7 +170,7 @@
     left: 40px;
     padding: 0.625rem 1.25rem;
     background-color: #33333300;
-    color: #000000;
+    color: var(--white);
     border: none;
     cursor: pointer;
     font-size: 1.875rem;
@@ -57,9 +180,10 @@
     position: absolute;
     top: 35px;
     left: 100px;
-    background-color: #cdcdcd;
+    background-color: var(--ink-black);
     padding: 1rem;
     border-radius: 5px;
+    border: 4px solid var(--lilac  );
     right: 20px;
     height: auto;
     display: flex;
@@ -70,7 +194,7 @@
 .menu a {
     display: inline-block;
     padding: 0.5rem 1rem;
-    color: #000;
+    color: var(--white);
     text-decoration: none;
     border-radius: 5px;
 }
@@ -89,9 +213,11 @@
 }
 
 .menu a:hover {
-    background-color: #9d9d9d;
-    color: #fff;
+    background-color: var(--almond );
+    color: var(--black);
 }
+
+
 
 .hidden {
     display: none;
@@ -99,7 +225,7 @@
 
 
 body {
-    background-color: #ffffff;
+    background: var(--dusty-grape);
 }
 
 @media (max-width: 600px) {
@@ -121,5 +247,15 @@ body {
         flex-direction: column;
         gap: 0.5rem;
         width: auto;
+    }
+
+    .music-content {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .vinyl-player {
+        margin-left: 0;
     }
 }
