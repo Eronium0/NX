@@ -69,6 +69,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 3rem;
+    transform-origin: top left;
     border: 4px solid var(--ink-black);
 
 }
@@ -108,6 +109,28 @@ body {
     background: var(--space-indigo);
 }
 
+
+@keyframes slideIn {
+    from {
+        clip-path: inset(0 100% 0 0);
+        opacity: 0;
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    to {
+        clip-path: inset(0 100% 0 0);
+        opacity: 0;
+    }
+}
 
 @media (max-width: 600px) {
   .menu {

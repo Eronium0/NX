@@ -4,7 +4,26 @@ const menuButton = document.getElementById('menuButton');
 const menu = document.getElementById('menu');
 
 menuButton.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+    try {
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            menu.style.animation = 'slideIn 0.5s ease forwards';
+        } else {
+            menu.style.animation = 'slideOut 0.5s ease forwards';
+        }
+    } catch (error) {
+        console.error('Error toggling menu:', error);
+    }
+});
+
+menu.addEventListener('animationend', (e) => {
+    try {
+        if (e.animationName === 'slideOut') {
+            menu.classList.add('hidden');
+        }
+    } catch (error) {
+        console.error('Error toggling menu:', error);
+    }
 });
 
 /* music player script */
@@ -18,6 +37,7 @@ const trackTitle = document.getElementById('track-list');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 const nowPlayingDisplay = document.getElementById('track-title');
+const slider = document.getElementById('volume');
 
 let currentTrack = 0;
 const track = trackTitle.querySelectorAll('li');
@@ -100,3 +120,17 @@ progressBarContainer.addEventListener('click', (e) => {
     const clickX = e.clientX - rect.left;
     audio.currentTime = (clickX / rect.width) * audio.duration;
 });
+
+const handleInput = (eslide) =>{
+    const min = eslide.min || 0;
+    const max = eslide.max || 100;
+    const pct = (eslide.value - min) / (max - min) * 100;
+    eslide.style.setProperty('--range-pct', pct + '%');
+};
+
+slider.addEventListener('input', (el) =>{ 
+    handleInput(el.target);
+    audio.volume = el.target.value;
+});
+handleInput(slider);
+

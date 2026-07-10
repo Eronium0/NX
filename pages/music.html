@@ -17,9 +17,9 @@
             <div class="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="./about.html">About Me</a>
-                <a href="./music.html">Music</a>
                 <a href="./eternity.html">Eternity</a>
-                <a href="./cs_projects.html">CS Projects</a>
+                <a href="./music.html">Music</a>
+                <a href="./cs_projects.html">Projects</a>
             </div>
             <div class="nav-socials">
                 <a href="https://www.instagram.com/ero.nium/" target="_blank" rel="noopener noreferrer"><i class = "fab fa-instagram"></i></a>
@@ -42,11 +42,13 @@
                 <button class = "prev" id = "prev"><i class = "fas fa-backward"></i></button>
                 <button class = "play-pause" id = "playPause"><i class = "fas fa-play"></i></button>
                 <button class = "next" id = "next"><i class = "fas fa-forward"></i></button>
-            </div>
+            </div>      
+            
             <div class = "progress-bar" id="progress-bar">
                 <div class = "progress" id="progress"></div>
             </div>
             <span class = "current-time" id="current-time">0:00</span> / <span class = "duration" id="duration">0:00</span>
+            <input class = "volume" id = "volume" type = "range" min = "0" max = "1" step = "0.01" value = "1">
             <h3 id = "track-title">Select a track</h3>
             <ul id = "track-list" class = "track-list">
                 <li data-src="../music/rush dx.wav">RUSH</li>
