@@ -197,6 +197,31 @@
     color: var(--white);
 }
 
+.main h3{
+    margin: 0px;
+    height: auto;
+    display : flex;
+    justify-content: left;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-left: 10rem;
+    margin-top: 5rem;
+    color: var(--white);
+    border-bottom: 4px solid var(--white);
+    width: 60%;
+}
+
+.main h4{
+    margin: 0px;
+    height: auto;
+    display : flex;
+    justify-content: left;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-left: 10rem;
+    margin-top: 2rem;
+    color: var(--white);
+    width: 60%;
+}
+
 .main p{
     height: auto;
     display : flex;
@@ -204,6 +229,30 @@
     font-size: 1.25rem;
     margin-left: 5rem;
     color: var(--white);
+}
+
+.wip{
+    background: linear-gradient(to right, var(--dusty-grape), var(--ink-black));
+    border-radius: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    min-height: 0.25rem;
+    max-width: 52.5rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+}
+
+.wip h3,
+.wip h4 {
+    margin: 0;
+}
+
+.wip h3 {
+    margin-top: 0.25rem;
+}
+
+.wip h4 {
+    margin-top: 0.25rem;
 }
 
 .main iframe {
