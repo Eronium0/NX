@@ -378,6 +378,18 @@ body {
         padding-left: 0;
     }
 
+    .wip {
+        background: linear-gradient(to bottom, var(--dusty-grape), var(--ink-black));
+        margin-left: 0;
+    }
+
+    .wip h3,
+    .wip h4 {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+
   .menu {
     flex-direction: column;
     width: auto;              
