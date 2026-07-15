@@ -153,6 +153,10 @@ body {
     margin-top: 0rem;
     padding-bottom: 1rem;
 }
+.grid-item p:has(a) {
+    margin-top: 0.75rem;
+}
+
 .grid-item a {
     display: flex;
     justify-content: left;
@@ -216,6 +220,14 @@ body {
         text-align: center;
         margin-left: 0;
         padding-left: 0;
+    }
+
+    .grid-item h2,
+    .grid-item p,
+    .grid-item a {
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
     }
 
   .menu {
