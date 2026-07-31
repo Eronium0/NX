@@ -28,25 +28,25 @@
             </div>
         </nav>
 
-    <main class="main">    
-        <h1>Eternity</h1>
-        <h2>Somewhere, Nowhere, Yet still there.</h2>
-    </main>
-<hr class="divider">
-    <section class="lore">
-        <h1>What is Eternity?</h1>
-        <h2>We all have questions that go unanswered.</h2>
-        <h2>We desperately claw for these answers to get some certainty.</h2>
-        <h2> For all you know, it could be somewhere, it could be nowhere, but you know it'll still be there.</h2>
-        <h2>This is Eternity.</h2>
-    </section>
-<hr class="divider">
+        <div class="journal">
+        <button class= "closer hidden" id= "closer" > CLOSE THE JOURNAL</button>
+         <ul id = "entries" class = "hidden"></ul>
+        <div class="viewer">    
+            <button class="prev" id="prev" aria-label="previous entry"><i class = "fas fa-arrow-left" aria-hidden="true"></i></button>
 
-    <section class="btv">
-        <h1>We begin by looking at what lies...</h1>
-        <a href="btv.html">BEYOND THE VEIL</a>
+            <div class = "stage">
+                <img id="doc-image">            
+                <button class = "cover" id = "cover" aria-label="Open journal"></button>
+                <div class = "back" id = "back"></div>
+            </div>
+            <button class="next" id="next" aria-label="next entry"><i class = "fas fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
 
-    </section>
+        </div>
+        <div class="lightbox hidden" id="lightbox">
+            <img id="lightbox-img">
+        </div>
+
 </body>
 <script src="../scripts/menu.js"></script>
 <script src="../scripts/eternity-documents.js"></script>
