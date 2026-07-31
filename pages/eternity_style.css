@@ -465,6 +465,19 @@ body {
         padding-left: 0;
     }
 
+    .btv-main h1,
+    .btv-main h2,
+    .btv-main h3,
+    .btv-main h4,
+    .btv-main p {
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .menu {
     flex-direction: column;   
     width: auto;              
