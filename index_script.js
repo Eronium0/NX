@@ -121,6 +121,15 @@ processor.computeFrame2 = function () {
 
 processor.doLoad();
 
+
+window.addEventListener("pageshow", (event) => {
+  if (!event.persisted) {
+    return;
+  }
+  processor.video1.play().catch((err) => { console.log("vid1 resume failed:", err); });
+  processor.video2.play().catch((err) => { console.log("vid2 resume failed:", err); });
+});
+
 // typing effect work
 
 const screen = document.getElementById('screen-text');
